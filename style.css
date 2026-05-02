@@ -1,0 +1,243 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO GERAL */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f6f7fb;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 60px 0;
+}
+
+/* FUNDO ALTERNADO */
+.bg-light {
+  background-color: #eceff5;
+}
+
+/* HEADER PROFISSIONAL */
+.header {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: white;
+  padding: 80px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* FOTO */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5f57ff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* TEXTO */
+.header-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+/* LINKS */
+.header-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+/* HOVER (efeito profissional) */
+.btn-link:hover {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  transform: translateY(-2px);
+}
+
+/* FOTO DE PERFIL */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5f57ff;
+}
+
+.subtitle {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* TÍTULOS */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #5f57ff;
+  padding-left: 10px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* LISTAS */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* PROJETO DESTAQUE */
+.destaque {
+  border-left: 5px solid #5f57ff;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #ddd;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* LINKS */
+a {
+  color: #5f57ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* CONTATO */
+section p {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+body {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.btn-link {
+  transition: all 0.25s ease;
+}
+
+.btn-link:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.skills span {
+  transition: all 0.2s ease;
+}
+
+.skills span:hover {
+  background: #4CAF50;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* estado inicial (escondido) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+/* quando aparece na tela */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
